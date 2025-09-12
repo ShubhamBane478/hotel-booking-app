@@ -1,4 +1,5 @@
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
+import { SERVICE_LIST, type singleService } from "@/config/app.config.ts";
 
 
 const Header = () => {
@@ -23,6 +24,13 @@ const Header = () => {
             Login
           </Button>
         </div>
+      </div>
+      <div className="container flex">
+        {SERVICE_LIST.map((item: singleService)=>{
+          return (
+            <Button key={item.id}>{item.title}</Button>
+          )
+        })}
       </div>
     </header>
   );

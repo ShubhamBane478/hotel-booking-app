@@ -1,4 +1,13 @@
-export const SERVICE_LIST = [
+export type serviceList = singleService[]
+
+export type singleService = {
+  id: number;
+  title: string;
+  icon: string;
+  active?: boolean;
+}
+
+export const SERVICE_LIST:serviceList  = [
   {
     id: 1,
     title: 'Stays',
