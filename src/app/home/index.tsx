@@ -1,8 +1,13 @@
+import HeroSection from './hero-section';
+import TrendingSection from './trending-section';
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <HeroSection />
+      <TrendingSection />
+    </>
+  );
+};
 
-export default Home
+export default Home;

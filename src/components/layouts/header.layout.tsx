@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { SERVICE_LIST, type singleService } from "@/config/app.config.ts";
+import Icon from "../ui/icon";
 
 
 const Header = () => {
@@ -28,7 +29,9 @@ const Header = () => {
       <div className="container flex">
         {SERVICE_LIST.map((item: singleService)=>{
           return (
-            <Button key={item.id}>{item.title}</Button>
+            <Button key={item.title} className={`bg-transparent shadow-none font-normal rounded-full hover:bg-white/10 cursor-pointer flex items-center justify-between gap-2 px-6 h-11 ${item.active && 'border border-white bg-white/10'}`}>
+              <Icon icon={item.icon} />
+              {item.title}</Button>
           )
         })}
       </div>
