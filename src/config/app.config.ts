@@ -7,6 +7,11 @@ export type singleService = {
   active?: boolean;
 }
 
+export type destination= {
+    title: string;
+    image: string;
+    className: string;
+}
 export const SERVICE_LIST:serviceList  = [
   {
     id: 1,
@@ -37,7 +42,7 @@ export const SERVICE_LIST:serviceList  = [
 ];
 
 
-export const TRENDING_DESTINATIONS = [
+export const TRENDING_DESTINATIONS:destination[] = [
   {
     title: 'New Delhi',
     image: 'delhi.jpg',
