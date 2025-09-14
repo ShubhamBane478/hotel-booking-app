@@ -1,5 +1,5 @@
 // @ts-nocheck
-import icons from '@/lib/icon';
+import icons from '@/lib/icons';
 
 const Icon    = ({icon  , ...props})=>{
 
